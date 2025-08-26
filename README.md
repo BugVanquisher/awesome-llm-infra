@@ -44,6 +44,16 @@
 
 ---
 
+## 🖼 LLM Infrastructure Pipeline
+
+<!-- Prefer SVG (crisp on GitHub). Falls back to PNG if needed. -->
+<picture>
+  <source type="images/svg+xml" srcset="llm_infra_pipeline.svg" />
+  <img alt="LLM Infra Pipeline" src="llm_infra_pipeline.png" />
+</picture>
+
+---
+
 ## 🛠 Optimization
 - [Quantization](https://arxiv.org/abs/2210.17323) – 8-bit, 4-bit quantization methods (GPTQ, AWQ).  
 - [Knowledge Distillation](https://arxiv.org/abs/1503.02531) – Compressing large models into smaller ones.  
