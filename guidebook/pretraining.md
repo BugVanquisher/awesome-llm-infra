@@ -58,6 +58,23 @@ Pre-training at scale requires specialized infrastructure:
 
 ---
 
+## Trade-offs & Best Practices
+
+| Aspect              | Benefit                                   | Trade-off / Challenge                  |
+|---------------------|-------------------------------------------|-----------------------------------------|
+| Larger models       | Higher capacity and accuracy              | Requires more compute and memory        |
+| More training data  | Better generalization and robustness      | Data quality, deduplication cost        |
+| Data Parallelism    | Simple to implement, scales easily        | High communication overhead             |
+| Tensor Parallelism  | Enables larger model sizes                | Complex partitioning, interconnect load |
+| Pipeline Parallelism| Efficient use of devices                  | Pipeline bubbles, scheduling complexity |
+| ZeRO / FSDP         | Memory-efficient training                 | Extra communication and implementation  |
+
+**Best Practices:**
+- Use hybrid parallelism (data + tensor + pipeline) to balance efficiency and scalability.
+- Monitor data quality rigorously; high-quality data can outweigh sheer scale.
+- Plan for compute-optimal training (Chinchilla insight) instead of simply scaling parameters.
+- Invest in fast interconnects (e.g., NVLink, InfiniBand) to minimize communication bottlenecks.
+
 ## Diagram
 
 ![Pre-training Parallelism](../images/pretraining_parallelism.svg)
