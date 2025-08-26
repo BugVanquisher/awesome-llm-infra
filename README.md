@@ -3,6 +3,8 @@
 > A curated list of resources on **Large Language Model (LLM) infrastructure** — from **pre-training** and **post-training** to **inference** and **serving at scale**.  
 > Covering system design, distributed training, optimization techniques, and cutting-edge research.
 
+💡 Looking for in-depth explanations and diagrams? Check out the [Guidebook](guidebook/) for a mini-handbook style version of this repo.
+
 ---
 
 ## 📚 Contents
