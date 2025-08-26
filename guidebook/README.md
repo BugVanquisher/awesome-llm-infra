@@ -16,3 +16,4 @@ A curated list of resources, tools, and projects for building and scaling large 
 - [Inference & Serving](inference.md)
 - [Optimization](optimization.md)
 - [Monitoring & Reliability](monitoring.md)
+- [Learning Roadmap](roadmap.md)
