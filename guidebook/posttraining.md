@@ -4,7 +4,7 @@ Post-training is a critical phase in large language model (LLM) development that
 
 This chapter covers the main post-training techniques: Supervised Fine-tuning (SFT), Reinforcement Learning from Human Feedback (RLHF), Direct Preference Optimization (DPO) and variants, as well as evaluation and safety practices.
 
-![Post-training Pipeline](../images/posttraining_pipeline.png)
+![Post-training Pipeline](../images/posttraining_pipeline.svg)
 
 ## Supervised Fine-tuning (SFT)
 SFT adapts a pretrained model to follow instructions or perform specific tasks using curated input-output pairs. Human annotators or synthetic generators provide demonstrations (e.g., question–answer pairs, code completions, dialogue turns). The model is trained using standard supervised learning to mimic these responses.
@@ -38,6 +38,22 @@ Robust evaluation and safety measures are essential in post-training:
 - **Red Teaming:** Actively probe the model for unsafe, biased, or undesirable behaviors using adversarial prompts.
 - **Guardrails:** Implement automated filters, moderation, and other controls to prevent harmful outputs.
 - **Human Evaluation:** Regularly involve human raters for qualitative assessment, especially for open-ended tasks.
+
+-## Trade-offs & Best Practices
+
+| Method      | Benefit                                   | Trade-off / Challenge                   |
+|-------------|-------------------------------------------|------------------------------------------|
+| SFT         | Simple, effective for adaptation          | Limited generalization, data quality sensitive |
+| RLHF        | Strong alignment with human preferences   | Expensive, requires human feedback, instability in RL |
+| DPO         | Simpler pipeline, avoids RL complexity    | Requires high-quality preference data    |
+| RLAIF       | Scalable with AI feedback                 | Risk of feedback bias, quality issues    |
+| Guardrails  | Safety and moderation at inference time   | May over-restrict or miss subtle issues  |
+
+**Best Practices:**
+- Start with SFT to establish baseline instruction-following.
+- Use RLHF or DPO for alignment depending on resources (human feedback vs computational efficiency).
+- Mix human and AI feedback (RLAIF) for scalability, but validate with humans.
+- Combine automated guardrails with human evaluation for comprehensive safety coverage.
 
 ## Further Reading
 - [Deep Reinforcement Learning from Human Preferences (Christiano et al., 2017)](https://arxiv.org/abs/1706.03741)
