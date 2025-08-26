@@ -1,5 +1,8 @@
 # Awesome LLM Infra [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)
+
 > A curated list of resources on **Large Language Model (LLM) infrastructure** — from **pre-training** and **post-training** to **inference** and **serving at scale**.  
 > Covering system design, distributed training, optimization techniques, and cutting-edge research.
 
