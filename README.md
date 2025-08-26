@@ -5,6 +5,8 @@
 
 💡 Looking for in-depth explanations and diagrams? Check out the [Guidebook](guidebook/README.md) for a mini-handbook style version of this repo.
 
+📘 Want a structured path? Explore the [Learning Roadmap](guidebook/roadmap.md) for step-by-step guidance.
+
 ---
 
 ## 📚 Contents
