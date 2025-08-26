@@ -21,7 +21,7 @@ Typical serving flow for an LLM request:
 4. **Decoding** → Greedy, sampling, beam search.  
 5. **Post-processing** → Detokenization, formatting, optional RAG integration.  
 
-![LLM Inference Stack](../images/inference_serving_stack.png)
+![LLM Inference Stack](../images/inference_serving_stack.svg)
 
 ---
 
