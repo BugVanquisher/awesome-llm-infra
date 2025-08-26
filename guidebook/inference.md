@@ -52,6 +52,15 @@ Typical serving flow for an LLM request:
 
 ---
 
+## Best Practices
+- Use continuous batching (vLLM) to balance throughput and latency dynamically.
+- Apply quantization carefully: test accuracy degradation before deploying widely.
+- Mix greedy decoding for deterministic tasks with sampling for creative tasks.
+- Add caching (KV cache, embeddings) to cut down repeated compute.
+- Consider redundancy across regions/clusters for fault tolerance.
+
+---
+
 ## 🔮 Emerging Trends  
 
 - **Speculative Decoding** — Use a small “draft” model to guess outputs, then verify with the large model (up to 2–3× faster).  
