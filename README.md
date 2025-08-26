@@ -48,8 +48,8 @@
 
 <!-- Prefer SVG (crisp on GitHub). Falls back to PNG if needed. -->
 <picture>
-  <source type="images/svg+xml" srcset="llm_infra_pipeline.svg" />
-  <img alt="LLM Infra Pipeline" src="llm_infra_pipeline.png" />
+    <source type="image/svg+xml" srcset="images/llm_infra_pipeline.svg" />
+  <img alt="LLM Infra Pipeline" src="images/llm_infra_pipeline.png" />
 </picture>
 
 ---
