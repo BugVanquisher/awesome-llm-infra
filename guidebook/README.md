@@ -1,4 +1,4 @@
-# Awesome LLM Infrastructure
+# LLM Infra Guidebook
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 ![Stars](https://img.shields.io/github/stars/vincent/awesome-llm-infra?style=social)
@@ -7,9 +7,7 @@
 
 A curated list of resources, tools, and projects for building and scaling large language model infrastructure.
 
-![LLM Infra Pipeline](images/llm_infra_pipeline.png)
-
-📘 For deeper explanations, diagrams, and learning paths, see the [LLM Infra Guidebook](guidebook/README.md).
+![LLM Infra Pipeline](../images/llm_infra_pipeline.svg)
 
 ## Contents
 
