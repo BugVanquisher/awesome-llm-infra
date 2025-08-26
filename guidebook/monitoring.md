@@ -38,6 +38,7 @@ LLM systems require monitoring across their entire lifecycle:
 - **Inference Monitoring**: Collect metrics on latency, throughput, model accuracy, and user feedback in production deployments.
 - **Drift Detection**: Continuously compare production data distributions and model outputs to training data to detect data or concept drift, triggering retraining or model updates as needed.
 
+
 ## Safety & Compliance
 
 Ensuring safety and compliance is vital, especially for LLMs handling sensitive data or operating in regulated environments:
@@ -45,6 +46,24 @@ Ensuring safety and compliance is vital, especially for LLMs handling sensitive 
 - **Audit Logging**: Maintain detailed logs of all model interactions, access events, and configuration changes for traceability and compliance audits.
 - **Privacy**: Implement privacy-preserving monitoring, such as anonymizing logs and adhering to data retention policies.
 - **Security Monitoring**: Detect unauthorized access, model misuse, or data exfiltration attempts through continuous security event monitoring.
+
+## Trade-offs & Best Practices
+
+| Strategy          | Benefit                                | Trade-off / Challenge                |
+|-------------------|----------------------------------------|---------------------------------------|
+| Metrics           | Fast insights into performance         | May miss detailed context             |
+| Logs              | Rich debugging information             | Can become large and costly to store  |
+| Traces            | End-to-end visibility of requests      | Overhead in distributed systems       |
+| Checkpointing     | Enables recovery after failure         | Adds I/O and storage overhead         |
+| Autoscaling       | Matches resources to demand            | Risk of cold starts and scaling lag   |
+| Redundancy        | High availability and fault tolerance  | Increases infrastructure costs        |
+
+**Best Practices:**
+- Combine metrics, logs, and traces for full observability (the "three pillars").
+- Balance checkpoint frequency with storage constraints.
+- Test failover scenarios regularly to validate redundancy and recovery.
+- Use anomaly detection on metrics to catch subtle issues early.
+
 
 ## ![Monitoring Pipeline](../images/monitoring_pipeline.svg)
 
